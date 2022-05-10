@@ -1,3 +1,5 @@
+package edu.sjsu.assignment4;
+
 import java.time.LocalDate;
 
 public class OnetimeAppointment extends Appointment{

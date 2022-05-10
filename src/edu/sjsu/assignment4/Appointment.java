@@ -1,4 +1,7 @@
+package edu.sjsu.assignment4;
+
 import java.time.LocalDate;
+
 import java.util.Objects;
 
 public abstract class Appointment implements Comparable<Appointment> {

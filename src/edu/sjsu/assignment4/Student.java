@@ -1,3 +1,5 @@
+package edu.sjsu.assignment4;
+
 import java.util.Objects;
 
 public class Student {

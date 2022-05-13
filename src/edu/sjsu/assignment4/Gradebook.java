@@ -19,11 +19,7 @@ public class Gradebook extends HashMap<Student, Character> {
     }
 
     public boolean addStudent(Student student) {
-        if (this.containsKey(student)) {
-            return false;
-        }
-        this.addStudent(student, 'N');
-        return true;
+        return addStudent(student,'N');
     }
 
     public boolean deleteStudent(int id) {

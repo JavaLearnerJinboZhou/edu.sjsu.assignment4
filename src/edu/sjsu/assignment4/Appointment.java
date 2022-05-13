@@ -75,7 +75,7 @@ public abstract class Appointment implements Comparable<Appointment> {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof Appointment) == false) {
+        if (!(obj instanceof Appointment)) {
             return false;
         }
         Appointment that = (Appointment) obj;
@@ -99,7 +99,7 @@ public abstract class Appointment implements Comparable<Appointment> {
     }
 
     public boolean between(LocalDate date) {
-        return date.isBefore(getStartDate()) == false && date.isAfter(getEndDate()) == false;
+        return !date.isBefore(getStartDate()) && !date.isAfter(getEndDate());
     }
 
     public abstract boolean occursOn(LocalDate date);

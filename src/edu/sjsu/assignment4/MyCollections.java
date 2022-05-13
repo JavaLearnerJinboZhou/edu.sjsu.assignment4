@@ -65,7 +65,7 @@ public class MyCollections {
     }
 
     public static void main(String[] args) {
-        LinkedList<String> employee = new LinkedList<>(Arrays.asList("Tom","Cathy","Trudy","Denny"));
+        LinkedList<String> employee = new LinkedList<>(Arrays.asList("Tom","Bob","Alice","Harry","Cathy","Trudy","Denny"));
         System.out.println(employee);
         downsize(employee, 3);
         System.out.println(employee);
